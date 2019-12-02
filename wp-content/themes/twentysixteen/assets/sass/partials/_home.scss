@@ -1,0 +1,218 @@
+.s-blank-image {
+	height: 660px;
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.s-card_steping {
+	.card_steping-number {
+		text-transform: uppercase;
+		font-size: .875rem;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 1.25rem;
+		&:before {
+			content: " ";
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: $primary;
+			position: absolute;
+			left: 0;
+			top: 100%;
+		}
+	}
+	.card_steping-title {
+		max-width: 300px;
+		line-height: 1.3;
+	}
+}
+
+.flow-header {
+    .heading-label {
+        font-size: .875rem;
+    }
+    .flow-heading {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.flow-item {
+    + .flow-item {
+        margin-top: 6rem;
+    }   
+    &.-has-step-number {
+        .flow-content {
+            padding-right: 20px;
+        }
+        .flow-big-number {
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: #f1f1f1;
+            margin-bottom: .5rem;
+        }
+    }
+}
+.flow-lists {
+    @include list-unstyled;
+    margin-bottom: 0;
+    li {
+        + li {
+            margin-top: 1rem;
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.shot-border-shadow {
+    border: 1px solid $border-color;
+    box-shadow: 0 0 40px rgba($color: #000000, $alpha: .15);
+    img {
+    	width: 100%;
+    }
+}
+
+.section-highlighted-block {
+	background-color: $primary;
+	padding-top: $padding-section;
+	padding-bottom: $padding-section;
+}
+
+.highlighted-image-block {
+	height: 100%;
+}
+
+.highlighted-image {
+	height: 100%;
+	margin-left: -80px;
+    position: relative;
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		object-fit: cover;
+	}
+}
+.highlighted-content {
+	min-height: 400px;
+	padding-left: $padding-section;
+	padding-right: $padding-section;
+	display: flex;
+	align-items: center;
+	.section-title {
+		margin-bottom: 1rem;
+	}
+}
+
+.card_metallising {
+	padding: ($padding-section * 1.5) $padding-section;
+	height: 100%;
+	transition: all .25s ease-in;
+	.card_metallising-title {
+		margin-bottom: 1.5rem;
+	}
+	.card_metallising-text {
+		font-size: 1.5rem;
+		line-height: 1.3;
+		color: $color-heading;
+	}
+}
+.col-metallising {
+	&:first-child {
+		.card_metallising {
+			background-color: #fafafa;
+		}
+	}
+	&:last-child {
+		.card_metallising {
+			background-color: #f8f6f9;
+		}
+	}
+}
+.card_metallising {
+	&:hover {
+		background-color: $primary !important;
+		color: $white;
+		.card_metallising-title, .card_metallising-text {
+			color: $white;
+		}
+	}	
+}
+
+.text-para-lead {
+	font-size: 1.125rem;
+}
+
+
+
+
+.contact_modal-open {
+    .modal-backdrop {
+        &.show {
+            opacity: .85;
+        }
+    }
+}
+.modal-contact {
+    .modal-content {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .modal-body {
+        @media (min-width: 992px) {
+            padding: 2rem;
+        }
+    }
+    .modal-body-header {
+        padding-right: 30px;
+    }
+    .close {
+        font-size: 2.25rem;
+        font-weight: 200;
+        position: absolute;
+        right: 15px;
+        top: 8px;
+        z-index: 10;
+        background-color: transparent;
+        padding: 0;
+        text-shadow: none;
+        opacity: .65;
+        line-height: 1;
+        color: $color-text;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+        &:focus {
+            box-shadow: none;
+            outline: 0;
+        }
+    }
+    .form-control, .btn {
+        box-shadow: none;
+        border-radius: 0;
+        &:focus {
+            border-color: $primary;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .modal-body-header {
+            padding-right: 40px;
+        }
+        .close {
+            right: 28px;
+            top: 26px;
+        }
+    }
+}
+

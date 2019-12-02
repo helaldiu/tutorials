@@ -1,0 +1,283 @@
+.more-color-list {
+	display: flex;
+	flex-wrap: wrap;
+	@include list-unstyled;
+	margin-top: 0;
+	margin-left: -5px;
+	margin-right: -5px;
+
+	li {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	img {
+		max-width: 40px;
+		height: auto;
+	}
+}
+
+.product-single-image-box {
+	display: flex;
+	width: 100%;
+}
+.product-slider-nav-block {
+	
+}
+.product-slider-nav {
+	max-width: 80px;
+	margin-right: 15px;
+	.slick-slide {
+		
+	}
+
+	&.slick-vertical {
+		.slick-slide {
+			margin-bottom: 10px;
+			border: 0;
+		}
+	}
+	.slide-item {
+		img {
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+.product-slider-for-block {
+	position: relative;
+	flex: 1 1 auto;
+	width: 1%;
+}
+.product-slider-for {
+	.slide-item {
+		
+	}
+}
+.product-single-big-image {
+	position: relative;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	/* &:before {
+		content: " ";
+		display: block;
+		padding-top: 100%;
+	}
+	img {
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	} */
+}
+
+.product-single-detail-actions {
+	margin-top: 4rem;
+	display: flex;
+	width: 100%;
+	max-width: 380px;
+	.btn {
+		padding: .75rem 2rem;
+	}
+	.btn-add-cart {
+		width: 100%;
+		flex: 3;
+		margin-right: 12px;
+	}
+	.btn-wishlist {
+		width: 100%;
+		flex: 2;
+	}
+}
+.product-single-title {
+	font-weight: bold;
+}
+.product-single-price {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+
+.product-quantity {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	width: 80px;
+	.form-control {
+		position: relative;
+		flex: 1 1 auto;
+    	width: 1%;
+    	border-radius: 0;
+    	border-color: $input-border;
+	}
+	.button-container {
+		display: flex;
+		flex-direction: column;
+		margin-left: -1px;
+		width: 30px;
+	}
+	.btn {
+		border-radius: 0;
+		border: 1px solid $border-color;
+		background-color: $white;
+		padding: 0;
+		line-height: 1.2;
+		&:focus {
+			box-shadow: none;
+		}
+	}
+	.cart-qty-plus {
+		margin-bottom: -1px;
+	}
+}
+
+.product-single-details-block {
+	.nav {
+		font-weight: bold;
+		border-bottom: 1px solid $border-color;
+		text-transform: uppercase;
+		a {
+			color: $color-text;
+			opacity: .65;
+		}
+		.active {
+			color: $primary;
+			opacity: 1;
+		}
+	}
+	.tab-pane-content {
+		padding-top: 30px;
+	}
+}
+
+.methods-of-payment {
+	@include list-unstyled;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -4px;
+	margin-right: -4px;
+	margin-bottom: 0;
+	li {
+		padding-left: 4px;
+		padding-right: 4px;
+		padding-bottom: 8px;
+	}
+	img {
+		height: 32px;
+	}
+}
+
+.product-accordions {
+	margin-top: 2rem;
+	.card {
+		border-radius: 0;
+		border: 0;
+		.card-header {
+			background-color: transparent;
+			padding: .5rem 0;
+			border-bottom: 0;
+			border-top: 1px solid $border-color;
+			&:first-child {
+				border-radius: 0;
+			}
+
+			h5 {
+				font-size: 1rem;
+				text-transform: uppercase;
+			}
+			a {
+				color: $color-heading;
+			}
+		}
+		.card-body {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.related-product-heading {
+	position: relative;
+	border-bottom: 1px solid $border-color;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	text-transform: uppercase;
+
+	span {
+		display: inline-block;
+		position: relative;
+		padding-bottom: .5rem;
+		&:before {
+			content: " ";
+			display: block;
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			left: 0;
+			top: 100%;
+			background-color: $color-heading;
+		}
+	}
+}
+.related-product-slider {
+	.slick-dots {
+		@include list-unstyled;
+		margin-bottom: 0;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    li {
+	    	padding-left: 4px;
+	    	padding-right: 4px;
+	    }
+		button {
+			display: inline-block;
+		    font-weight: 400;
+		    text-align: center;
+		    white-space: nowrap;
+		    vertical-align: middle;
+		    user-select: none;
+		    border: 0;
+		    background-color: transparent;
+		    border: 1px solid $border-color;
+		    font-size: 0;
+		    line-height: 1;
+		    color: transparent;
+		    width: 24px;
+		    height: 6px;
+		    position: relative;
+		}
+		.slick-active {
+			button {
+				border-color: $color-heading;
+			}
+		}
+	}
+	.slide-item {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+.product-single-core-info {
+	position: relative;
+	padding-top: 1rem;
+	&:before {
+		content: " ";
+		display: block;
+		width: 100px;
+		height: 1px;
+		background-color: $color-heading;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}

@@ -1,0 +1,29 @@
+.footer {
+	padding-top: $common-space *2;
+	padding-bottom: $common-space *2;
+}
+.copyright {
+	display: inline-block;
+	font-size: 90%;
+	opacity: .85;
+	text-transform: uppercase;
+}
+
+.foo-socials {
+	display: flex;
+	flex-wrap: wrap;
+	@include list-unstyled;
+	margin: 0 -15px 0;
+	font-size: ($fs-base * 1.25);
+	li {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	a {
+		display: inline-block;
+		transition: .25s ease;
+		&:hover {
+			
+		}
+	}
+}

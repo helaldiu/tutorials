@@ -1,0 +1,82 @@
+@media (min-width: 992px) {
+	.navbar-expand-lg {
+		.navbar-mega-container {
+			flex-wrap: nowrap;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.container-xl {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media (min-width: 1400px) {
+	.container-xl {
+		max-width: 1300px;
+	}
+	.container-large {
+		max-width: 1300px;
+	}
+}
+@media (min-width: 1600px) {
+	.container-xl {
+		max-width: 1400px;
+	}
+}
+
+@media (min-width: 1800px) {
+	.container-xl {
+		max-width: 1500px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.hero {
+		.hero-heading {
+			font-size: 2.5rem;
+			margin-top: 0;
+		}
+		.block-pt {
+			padding-top: 30px;
+		}
+	}
+	.section-highlighted-block {
+		padding-top: 0;
+		padding-bottom: 30px;
+	}
+	.highlighted-image-block {
+		position: relative;
+		height: auto;
+		padding: 8px;
+	}
+	.highlighted-image {
+		position: relative;
+		height: auto;
+		margin: 0 0 1rem;
+		&:before {
+			content: " ";
+			display: block;
+			padding-top: 62.5%;
+		}
+	}
+	.highlighted-content {
+		min-height: auto;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.flow-item+.flow-item {
+		margin-top: 50px;
+	}
+	.flow-image {
+		margin-bottom: 1rem;
+	}
+	.card_metallising  {
+		padding: 80px 40px;
+	}
+}

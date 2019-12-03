@@ -35,7 +35,6 @@ get_header(); ?>
 	                    <img src="<?php echo get_theme_mod('home_banner_img');?>" alt="">
 	                </div>
 	            </div>
-	            
 	        </div>
 	    </section>
 	    </main>
